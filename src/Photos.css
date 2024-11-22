@@ -1,0 +1,107 @@
+/* Background and body setup */
+body {
+    background-image: url('pink.gif'); /* Background image path */
+    background-size: cover; /* Ensures the image covers the full screen */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    background-position: center; /* Centers the image */
+    position: fixed; /* Fixes the background to the viewport */
+    top: 0; /* Start at the top */
+    left: 0; /* Start at the left */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin: 0; /* Removes default body margins */
+    padding: 0; /* Removes padding */
+    overflow: hidden; /* Prevents scrollbars */
+    backdrop-filter: blur(8px); /* Adds a blur to the background */
+    animation: fadeInBackground 2s ease-in-out; /* Fade-in animation for background */
+}
+
+/* Background fade-in animation */
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Gallery layout styles */
+.Gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1400px; /* Optional: Set a max-width for the gallery */
+    box-sizing: border-box; /* Ensure padding doesn't cause layout issues */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background for the gallery */
+    border-radius: 20px;
+    backdrop-filter: blur(10px); /* Blur effect behind the gallery */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    animation: fadeInGallery 1.5s ease-in-out; /* Fade-in animation for gallery */
+}
+
+/* Gallery fade-in animation */
+@keyframes fadeInGallery {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Thumbnail images */
+.image-thumbnail {
+    width: 220px; /* Resize images */
+    height: 220px; /* Ensure consistent height */
+    margin: 12px; /* Spacing between images */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 20px; /* Rounded corners */
+    background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Light gradient for background */
+    object-fit: cover; /* Ensure images fill their container without distortion */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow around thumbnails */
+    animation: fadeInThumbnail 1s ease forwards; /* Fade-in for thumbnails */
+    opacity: 0;
+}
+
+/* Fade-in animation for images */
+@keyframes fadeInThumbnail {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Hover effect for thumbnails */
+.image-thumbnail:hover {
+    transform: scale(1.15); /* Slightly larger zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+    background: linear-gradient(145deg, #f0f0f0, #dcdcdc); /* Lighten background on hover */
+    animation: pulse 1s infinite ease-in-out; /* Pulse animation on hover */
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1.15);
+    }
+    50% {
+        transform: scale(1.18);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}

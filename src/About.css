@@ -1,0 +1,38 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-image: url('/pink.jpg'); /* Replace with your image path */
+  background-size: cover; /* Adjusts the image to cover the container */
+  background-position: center; /* Center the image */
+}
+
+.about-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  width: 300px; /* Increased the width */
+  height: 300px; /* Increased the height */
+  object-fit: cover; /* Keeps the aspect ratio */
+  border: 3px solid #ccc; /* Keeps the border */
+  margin-top: 10px;
+  border-radius: 0; /* Removes rounded corners */
+}
+

@@ -1,0 +1,41 @@
+/* Container styling */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background-image: url('/pink2.jpg'); /* Set the background image */
+  background-size: cover; /* Ensure the image fully covers the container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-attachment: fixed; /* Keep the image fixed during scrolling */
+  background-color: #fce4ec; /* Soft pink fallback */
+  color: white;
+}
+
+/* Centered content box */
+.home-content {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Translucent white background */
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Main title */
+.home-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ff009d; /* White color for contrast */
+}
+
+/* Description text */
+.home-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #000000; /* Lighter gray for better readability */
+}
