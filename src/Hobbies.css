@@ -1,62 +1,71 @@
 /* Hobbies.css */
 .hobbies-container {
-    padding: 40px;
-    text-align: center;
-    background-image: url('/pink2.jpg'); /* Add background image */
-    background-size: cover;              /* Make the image cover the container */
-    background-repeat: no-repeat;        /* Prevent the image from repeating */
-    background-position: center;         /* Center the image */
-    background-color: rgba(0, 0, 0, 0.6); /* Fallback semi-transparent background */
-    color: #ff5bdb;
-    border-radius: 10px;
-    max-width: 1200px;
-    margin: 20px auto;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Other styles remain unchanged */
-  .hobbies-title {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-  }
-  
-  .hobbies-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  .hobby-card {
-    background-color: #b35393;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s;
-    cursor: pointer;
-    box-shadow: 0px 4px 8px rgba(240, 160, 231, 0.2);
-  }
-  
-  .hobby-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .hobby-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .hobby-info {
-    padding: 20px;
-  }
-  
-  .hobby-name {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #ffffffdd; /* Optional color change for the hobby name */
-  }
-  
-  .hobby-description {
-    font-size: 1rem;
-    color: #ddd;
-  }
-  
+  padding: 40px;
+  text-align: center;
+  background-image: url('/pink2.jpg'); /* Add background image */
+  background-size: cover;              /* Make the image cover the container */
+  background-position: center;         /* Center the image */
+  background-repeat: no-repeat;        /* Prevent the image from repeating */
+  background-color: rgba(0, 0, 0, 0.6); /* Fallback semi-transparent background */
+  color: #ff5bdb;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto; /* Center horizontally */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Position the container absolutely */
+  bottom: 0; /* Place the container at the bottom of the screen */
+  left: 0;
+  right: 0;
+  min-height: 80vh; /* Ensures the container takes at least 80% of the viewport height */
+  z-index: 1; /* Ensures it stays on top of other elements */
+}
+
+/* Other styles remain unchanged */
+.hobbies-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.hobbies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.hobby-card {
+  background-color: #b35393;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(240, 160, 231, 0.2);
+}
+
+.hobby-card:hover {
+  transform: translateY(-5px);
+}
+
+.hobby-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hobby-info {
+  padding: 20px;
+}
+
+.hobby-name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffffffdd; /* Optional color change for the hobby name */
+}
+
+.hobby-description {
+  font-size: 1rem;
+  color: #ddd;
+}

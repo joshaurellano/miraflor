@@ -4,21 +4,18 @@ import './Hobbies.css';
 
 const hobbiesList = [
   {
-    name: '',
-    description: '.',
+    name: 'Watching Movies/Series',
+    description: 'I enjoy exploring various genres, from action-packed blockbusters to thought-provoking dramas and binge-worthy TV shows.',
   },
   {
-    name: '',
-    description: '.',
+    name: 'Cooking/Baking',
+    description: 'I love experimenting in the kitchen, trying new recipes, and perfecting classic dishes, especially baking pastries and desserts.',
   },
   {
-    name: '',
-    description: '.',
+    name: 'Fitness and Exercise',
+    description: 'home workouts is important to me for maintaining a healthy lifestyle.',
   },
-  {
-    name: '',
-    description: '.',
-  },
+ 
 ];
 
 const Hobbies = () => {

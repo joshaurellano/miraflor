@@ -6,44 +6,31 @@ import Navbar from 'react-bootstrap/Navbar';
 import './App.css';
 import About from './About';
 import Home from './Home'; // Import the actual Home component
-//import Photos from './Photos';
-//import Education from './Education';
-//import Hobbies from './Hobbies';
-//import Contact from './Contact';  // Importing the Contact component correctly
+import Education from './Education'; // Import the Education component
+import Hobbies from './Hobbies'; // Import the Hobbies component
+import Contact from './Contact'; // Import the Contact component
+import Photos from './Photos'; // Import the Photos component
 
-// Placeholder components for other pages
-const Education = () => <div style={{ color: 'white', padding: '20px' }}><h2>Education Page</h2></div>;
-const Hobbies = () => <div style={{ color: 'white', padding: '20px' }}><h2>Hobbies Page</h2></div>;
-const Skills = () => <div style={{ color: 'white', padding: '20px' }}><h2>Skills Page</h2></div>;
-const Photos = () => <div style={{ color: 'white', padding: '20px' }}><h2>Photos Page</h2></div>;
-
-// Adding the Contact Component
-const Contact = () => (
-  <div style={{ color: 'white', padding: '20px' }}>
-    <h2>Contact Page</h2>
-    <p>Feel free to reach out to me for any inquiries or collaborations!</p>
-  </div>
-);
-
+// Main App Component
 function App() {
   return (
     <Router>
       <div
         style={{
-          backgroundImage: 'url(/pink2.jpg)',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-          height: "100vh",
-          width: "100vw",
-          paddingTop: "60px",
-          position: "relative"
+          backgroundImage: 'url(/dog.gif)',  // Ensure the image is in the public folder
+          backgroundSize: 'cover',           // Ensure the image fully covers the container
+          backgroundRepeat: 'no-repeat',     // Prevent tiling
+          backgroundPosition: 'center',      // Center the image
+          height: "100vh",                    // Full viewport height
+          width: "100vw",                     // Full viewport width
+          paddingTop: "60px",                 // Adjust padding for the navbar
+          position: "relative",
         }}
       >
         {/* Bootstrap navbar for navigation */}
-        <Navbar data-bs-theme="dark" fixed="top">
+        <Navbar className="navbar" fixed="top" bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand as={Link} to="/" style={{ fontWeight: "bold" }}>
+            <Navbar.Brand as={Link} to="/" className="navbar-brand">
               WINTER BEAR
             </Navbar.Brand>
             <Nav className="me-auto">
@@ -58,7 +45,7 @@ function App() {
         </Navbar>
 
         {/* Main content area */}
-        <div className="mt-5">
+        <div className="mt-5" style={{ marginTop: '80px' }}> {/* Adjust margin-top here */}
           {/* Routes for different pages */}
           <Routes>
             <Route path="/" element={<Home />} />
@@ -71,12 +58,11 @@ function App() {
         </div>
 
         {/* Footer */}
-        <footer style={{ textAlign: "center", paddingTop: "224px", backgroundColor: "transparent" }}>
-          Jenelyn Miraflor
-        </footer>
+        <footer style={{ textAlign: "center", paddingTop: "224px", backgroundColor: "transparent" }}></footer>
       </div>
     </Router>
   );
 }
 
 export default App;
+

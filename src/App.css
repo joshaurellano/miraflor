@@ -1,0 +1,77 @@
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* More transparent background */
+    font-size: 0.9rem; /* Smaller font size for navbar */
+    padding: 5px 15px; /* Reduced padding for a smaller navbar */
+    height: 50px; /* Adjust height to make the navbar more compact */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem; /* Smaller brand font size */
+    color: #fff !important; /* White color for the brand */
+  }
+  
+  .nav-link-hover {
+    color: #f0f0f0 !important;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link-hover:hover {
+    color: #b80780 !important; /* Pink color on hover */
+  }
+  
+  /* Fixed Navbar */
+  .navbar.fixed-top {
+    z-index: 10; /* Ensure navbar stays on top */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      font-size: 0.8rem; /* Even smaller font on mobile */
+      padding: 3px 10px; /* Reduced padding for mobile */
+    }
+  
+    .navbar-brand {
+      font-size: 1.2rem; /* Smaller brand font size on mobile */
+    }
+  }
+  
+  /* Full Screen Background */
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #root {
+    height: 100%; /* Ensure the root container takes full height */
+  }
+  
+  .App {
+    background-image: url('/dog.gif'); /* Set the background image */
+    background-size: cover; /* Ensure it fully covers the screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    padding-top: 60px; /* Adjust padding to avoid navbar overlap */
+    position: relative;
+  }
+  
+  /* Footer Styling */
+  footer {
+    position: absolute; /* Position it at the bottom of the page */
+    bottom: 20px; /* Set space from the bottom */
+    left: 50%; /* Position from the left side */
+    transform: translateX(-50%); /* Center horizontally */
+    color: rgb(24, 3, 3); /* Footer text color */
+    font-size: 1rem; /* Footer font size */
+    text-align: center; /* Center the text inside the footer */
+    width: 100%; /* Ensure it spans the full width */
+    padding: 10px 0; /* Padding for spacing */
+    background-color: transparent; /* Transparent background for the footer */
+  }
+  

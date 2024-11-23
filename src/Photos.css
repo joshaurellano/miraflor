@@ -1,6 +1,6 @@
 /* Background and body setup */
 body {
-    background-image: url('pink.gif'); /* Background image path */
+    background-image: url('/pink2.jpg');/* Background image path */
     background-size: cover; /* Ensures the image covers the full screen */
     background-repeat: no-repeat; /* Prevents repeating the image */
     background-position: center; /* Centers the image */
@@ -12,7 +12,7 @@ body {
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Arrange items vertically */
     align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the top of the page */
     margin: 0; /* Removes default body margins */
     padding: 0; /* Removes padding */
     overflow: hidden; /* Prevents scrollbars */
@@ -34,7 +34,7 @@ body {
 .Gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; /* Center gallery content horizontally */
     padding: 20px;
     width: 100%;
     max-width: 1400px; /* Optional: Set a max-width for the gallery */
@@ -44,6 +44,7 @@ body {
     backdrop-filter: blur(10px); /* Blur effect behind the gallery */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
     animation: fadeInGallery 1.5s ease-in-out; /* Fade-in animation for gallery */
+    margin-top: 20px; /* Space from the top of the page */
 }
 
 /* Gallery fade-in animation */
@@ -105,3 +106,4 @@ body {
         transform: scale(1.15);
     }
 }
+

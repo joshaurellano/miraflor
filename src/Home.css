@@ -1,41 +1,36 @@
 /* Container styling */
 .home-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   height: 100vh; /* Full viewport height */
   width: 100vw; /* Full viewport width */
-  background-image: url('/pink2.jpg'); /* Set the background image */
+  background-image: url('/dog.gif'); /* Set the background image */
   background-size: cover; /* Ensure the image fully covers the container */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
   background-attachment: fixed; /* Keep the image fixed during scrolling */
   background-color: #fce4ec; /* Soft pink fallback */
   color: white;
-}
-
-/* Centered content box */
-.home-content {
-  text-align: center;
-  max-width: 600px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.1); /* Translucent white background */
-  border-radius: 10px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center text horizontally */
+  flex-direction: column; /* Stack elements vertically */
 }
 
 /* Main title */
 .home-title {
-  font-size: 3rem;
+  font-size: 3.5rem; /* Larger font size for better emphasis */
   font-weight: bold;
-  margin-bottom: 20px;
-  color: #ff009d; /* White color for contrast */
+  margin-bottom: 10px; /* Add a small margin at the bottom */
+  color: #048e8a; /* Soft pink color for the title */
+  text-shadow: 2px 2px 4px rgba(7, 240, 217, 0.3); /* Subtle shadow for depth */
 }
 
 /* Description text */
 .home-description {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  line-height: 1.6;
-  color: #000000; /* Lighter gray for better readability */
+  font-size: 1.4rem; /* Larger text for readability */
+  margin-top: 10px; /* Space between title and description */
+  line-height: 1.8; /* Increased line height for better text spacing */
+  color: #171416; /* Off-white for softer readability */
+  font-weight: 300; /* Lighter font weight for the description */
 }
+

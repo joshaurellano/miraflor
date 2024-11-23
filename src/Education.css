@@ -1,32 +1,60 @@
 /* Education.css */
 
+/* Education Container Styling */
 .education-container {
-    padding: 40px 0;
-    color: #ffffff;
-    background-image: url('/pink2.jpg'); /* Semi-transparent background */
-    border-radius: 15px;
-    box-shadow: 0px 0px 15px rgb(255, 255, 255); /* Subtle shadow for emphasis */
-    backdrop-filter: blur(5px); /* Blur effect behind the container */
+  padding: 40px 0;
+  color: #ffffff;
+  background-image: url('/pink2.jpg'); /* Semi-transparent background */
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgb(255, 255, 255); /* Subtle shadow for emphasis */
+  backdrop-filter: blur(5px); /* Blur effect behind the container */
+  position: absolute; /* Position the container absolutely */
+  top: 0; /* Align to the top of the page */
+  left: 50%; /* Horizontally center the container */
+  transform: translateX(-50%); /* Adjust the container to exactly center */
+  width: 100%; /* Ensures full width */
+  max-width: 1200px; /* Optional: max width for better readability */
+  box-sizing: border-box; /* Includes padding and borders in the width */
+}
+
+.education-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.education-title {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #4e032d;
+}
+
+.education-card {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.education-card .card-body {
+  text-align: left;
+}
+
+.education-card .card-title {
+  font-size: 1.5rem;
+  color: #a5156e;
+}
+
+.education-card .card-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+  .education-container {
+    padding: 20px; /* Less padding on small screens */
   }
-  
   .education-title {
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #ff18e0; /* Pinkish color for the title */
+    font-size: 1.5rem; /* Smaller title for mobile */
   }
-  
-  .education-card {
-    background: linear-gradient(145deg, #ffffff, #ffffff); /* kulay kang cards mo*/
-    border-radius: 10px;
-    color: #ffffff;
-    box-shadow: 0px 5px 15px rgb(255, 255, 255); /* Slight shadow for cards */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* transition lang*/
-  }
-  
-  .education-card:hover {
-    transform: translateY(-10px); /* Lift the card slightly on hover */
-    box-shadow: 0px 10px 20px rgb(247, 245, 245); /* Enhanced shadow on hover */
-  }
-  
+}
